@@ -128,6 +128,7 @@ export const updatePassword = async (passwordData) => {
 };
 
 export const forgotPassword = async (mobileNo) => {
+  console.log(mobileNo);
   try {
     const response = await fetch(`${BASE_URL}/users/forgot-password`, {
       method: "POST",

@@ -51,13 +51,13 @@ const ContactInfo = () => {
           Phone
         </h4>
         <a
-          href="tel:#"
+          href="viber://chat?number=+959785077529"
           className="inline-flex items-center gap-3 duration-300 hover:text-blue"
         >
           <span className="text-xl text-blue">
             <IoMdCall />
           </span>
-          +8801723-4567890
+          +959 785077529
         </a>
       </div>
       <div className="mx-auto max-w-xs border-b border-[#ebebeb] py-7">
@@ -65,7 +65,7 @@ const ContactInfo = () => {
           E-mail
         </h4>
         <a
-          href="zawnaingoo002345@gmail.com"
+          href="#"
           target="_blank"
           className="inline-flex items-center gap-3 duration-300 hover:text-blue"
         >
