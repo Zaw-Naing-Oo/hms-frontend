@@ -30,7 +30,7 @@ const Navbar = () => {
       >
         <div className="container flex items-center justify-between">
           <Link to="/">
-            <img className="h-8 md:h-9" src="/logo.png" alt="Patientoo" />
+            <img className="h-8 md:h-9" src="/logo4.png" alt="Patientoo" />
           </Link>
           <DesktopNavItems items={navItems} user={user} isLoading={isLoading} />
           <MobileNavItems
