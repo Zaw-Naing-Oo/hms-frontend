@@ -14,15 +14,14 @@ const Footer = () => {
           <div className="mx-auto max-w-[320px] text-center md:max-w-[270px] md:text-left lg:max-w-[320px]">
             <img
               className="mx-auto h-10 md:mx-0"
-              src="/logo.png"
+              src="/logo4.png"
               alt="Patientoo"
             />
             <p className="mt-5 text-[15px] font-medium text-gray-600">
-              Patientoo is a comprehensive hospital management system designed
-              to streamline healthcare operations and enhance patient care.
+             Trust Care represents a sophisticated hospital management system meticulously crafted to optimize healthcare operations and elevate patient care standards
             </p>
             <p className="mt-4 text-[13px] font-medium text-gray-600">
-              &copy; {new Date().getFullYear()} Patientoo. All Rights Reserved
+              &copy; {new Date().getFullYear()} TrustCare. All Rights Reserved
             </p>
           </div>
           <div className="flex justify-center">
@@ -33,7 +32,7 @@ const Footer = () => {
               <ul className="grid grid-cols-1 gap-x-10 gap-y-3 text-center md:text-left lg:grid-cols-2">
                 <li>
                   <Link
-                    className="font-medium text-blue hover:underline"
+                    className="font-medium text-teal-700 hover:underline"
                     to="/about"
                   >
                     About
@@ -41,7 +40,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    className="font-medium text-blue hover:underline"
+                    className="font-medium text-teal-700 hover:underline"
                     to="/privacy-policy"
                   >
                     Privacy Policy
@@ -49,7 +48,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    className="font-medium text-blue hover:underline"
+                    className="font-medium text-teal-700 hover:underline"
                     to="/blogs"
                   >
                     Blog
@@ -57,7 +56,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    className="font-medium text-blue hover:underline"
+                    className="font-medium text-teal-700 hover:underline"
                     to="/terms-of-use"
                   >
                     Terms of Use
@@ -65,7 +64,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    className="font-medium text-blue hover:underline"
+                    className="font-medium text-teal-700 hover:underline"
                     to="/contact"
                   >
                     Contact Us
@@ -114,11 +113,11 @@ const Footer = () => {
           <p className="py-5 text-center text-sm text-gray-500">
             Developed by{" "}
             <Link
-              className="font-medium text-blue hover:underline"
-              to="https://www.poshcoder.com/"
+              className="font-medium text-teal-700 hover:underline"
+              to="https://www.zawnaingoo.me/"
               target="_blank"
             >
-              Posh Coder
+              Zaw Naing Oo
             </Link>
           </p>
         </div>

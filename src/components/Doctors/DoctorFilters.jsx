@@ -70,7 +70,7 @@ const DoctorFilters = ({ selectable }) => {
         </button>
       </div>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1">
-        <DoctorDistrictFilter district={district} setDistrict={setDistrict} />
+        {/* <DoctorDistrictFilter district={district} setDistrict={setDistrict} /> */}
         <DoctorHospitalFilter
           district={district}
           hospital={hospital}
@@ -86,7 +86,7 @@ const DoctorFilters = ({ selectable }) => {
             onCheckedChange={handleSpecialitiesChange}
           />
         </div>
-        <div className="">
+        {/* <div className="">
           <Popover>
             <PopoverTrigger asChild>
               <Button
@@ -109,7 +109,7 @@ const DoctorFilters = ({ selectable }) => {
               />
             </PopoverContent>
           </Popover>
-        </div>
+        </div> */}
         <div className="">
           <Button
             className="w-full bg-blue py-[22px] hover:bg-blue/90"

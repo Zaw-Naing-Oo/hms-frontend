@@ -28,13 +28,13 @@ const DashboardSidebar = ({ sidebarOpen, setSidebarOpen }) => {
       <aside className="sidebar h-full w-64 -translate-x-full bg-white duration-300 group-[&.active]:-translate-x-0 lg:w-full lg:-translate-x-0 lg:border-r lg:border-[#eee]/70">
         <div className="flex h-16 items-center overflow-hidden border-b border-[#eee]/70 px-8 sm:h-20">
           <NavLink to="/">
-            <img className="h-7" src="/logo.png" alt="Patientoo" />
+            <img className="h-7" src="/logo4.png" alt="Patientoo" />
           </NavLink>
         </div>
         <div className="sidebarContent h-[calc(100vh-64px)] overflow-y-auto pb-5 sm:h-[calc(100vh-80px)] sm:pb-10">
           {user && (
             <>
-              <p className="px-8 py-4 text-xs font-medium uppercase text-blue">
+              <p className="px-8 py-4 text-xs font-medium uppercase text-teal-700">
                 Menu
               </p>
               <nav className="flex flex-col gap-1 sm:gap-1.5">
