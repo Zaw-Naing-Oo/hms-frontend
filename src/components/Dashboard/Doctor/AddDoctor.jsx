@@ -25,22 +25,22 @@ const doctorSchema = z.object({
   specialities: z
     .array(z.string())
     .nonempty({ message: "Select at least one speciality" }),
-  designation: z.string(),
+  // designation: z.string(),
   languages: z
     .array(z.string())
     .nonempty({ message: "Select at least one language" }),
-  institute: z.string(),
+  // institute: z.string(),
   department: z.string(),
   workExperience: z.string(),
   chamberTime: z.string(),
   offDays: z.array(z.string()),
   floorNo: z.string(),
   roomNumber: z.string(),
-  branchNames: z.array(z.string()),
-  bmdcNo: z.string(),
+  // branchNames: z.array(z.string()),
+  // bmdcNo: z.string(),
   consultationFee: z.number().optional(),
   phone: z.string(),
-  feesToShowReport: z.number().optional(),
+  // feesToShowReport: z.number().optional(),
 });
 
 const AddDoctor = ({ doctor = {} }) => {
@@ -54,20 +54,20 @@ const AddDoctor = ({ doctor = {} }) => {
       qualifications: doctor?.qualifications || "",
       about: doctor?.about || "",
       specialities: doctor?.specialities || [],
-      designation: doctor?.designation || "",
+      // designation: doctor?.designation || "",
       languages: doctor?.languages || [],
-      institute: doctor?.institute || "",
+      // institute: doctor?.institute || "",
       department: doctor?.department || "",
       workExperience: doctor?.workExperience || "",
       chamberTime: doctor?.chamberTime || "",
       offDays: doctor?.offDays || [],
       floorNo: doctor?.floorNo || "",
       roomNumber: doctor?.roomNumber || "",
-      branchNames: doctor?.branchNames || [],
-      bmdcNo: doctor?.bmdcNo || "",
-      consultationFee: doctor?.consulatationFee || undefined,
+      // branchNames: doctor?.branchNames || [],
+      // bmdcNo: doctor?.bmdcNo || "",
+      consultationFee: doctor?.consultationFee || undefined,
       phone: doctor?.phone || "",
-      feesToShowReport: doctor?.feesToShowReport || undefined,
+      // feesToShowReport: doctor?.feesToShowReport || undefined,
     },
   });
 
@@ -172,19 +172,19 @@ const AddDoctor = ({ doctor = {} }) => {
                 formControl={form.control}
               />
               <DoctorSpecialities
-                formControl={form.control}
-                onSelectChange={form.setValue}
-                initialSelected={
-                  doctor?.specialities?.map((s) => ({
-                    value: s.name,
-                    label: s.name,
-                  })) || []
-                }
-              />
+              formControl={form.control}
+              onSelectChange={form.setValue}
+              initialSelected={
+                doctor?.specialities?.map((s) => ({
+                  value: s.name,
+                  label: s.name,
+                })) || []
+              }
+            />
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-5 gap-y-3">
-            <DashFormField
+            {/* <DashFormField
               label="Institute"
               name="institute"
               placeholder="Enter doctor institute"
@@ -195,19 +195,19 @@ const AddDoctor = ({ doctor = {} }) => {
               name="designation"
               placeholder="Enter doctor designation"
               formControl={form.control}
-            />
+            /> */}
             <DashFormField
               label="Department"
               name="department"
               placeholder="Enter doctor department"
               formControl={form.control}
             />
-            <DashFormField
+            {/* <DashFormField
               label="BMDC No"
               name="bmdcNo"
               placeholder="Enter doctor BMDC number"
               formControl={form.control}
-            />
+            /> */}
             <DashFormField
               label="Work Experience"
               name="workExperience"
@@ -251,13 +251,13 @@ const AddDoctor = ({ doctor = {} }) => {
               formControl={form.control}
             />
 
-            <DashFormField
+            {/* <DashFormField
               label="Fees To Show Report"
               name="feesToShowReport"
               inputType="number"
               placeholder="Enter fees to show report"
               formControl={form.control}
-            />
+            /> */}
             <DoctorMultiSelect
               label="Languages"
               name="languages"
@@ -275,7 +275,7 @@ const AddDoctor = ({ doctor = {} }) => {
                 })) || []
               }
             />
-            <DoctorMultiSelect
+            {/* <DoctorMultiSelect
               label="Branch Names"
               name="branchNames"
               placeholder="Type branch names doctor works at"
@@ -287,7 +287,7 @@ const AddDoctor = ({ doctor = {} }) => {
                   label: branch,
                 })) || []
               }
-            />
+            /> */}
             <div className="col-span-2">
               <DashFormField
                 label="About Doctor"

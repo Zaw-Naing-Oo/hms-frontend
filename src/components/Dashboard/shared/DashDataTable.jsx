@@ -128,9 +128,9 @@ const DashDataTable = ({
             </TableHeader>
             <TableBody>
               {table.getRowModel().rows?.length ? (
-                table.getRowModel().rows.map((row) => (
+                table.getRowModel().rows?.map((row) => (
                   <TableRow
-                    key={row.id}
+                    key={row?.id}
                     data-state={row.getIsSelected() && "selected"}
                     className="even:bg-[#F8FAFC]"
                   >
@@ -147,7 +147,7 @@ const DashDataTable = ({
               ) : (
                 <TableRow>
                   <TableCell
-                    colSpan={columns.length}
+                    colSpan={columns?.length}
                     className="h-40 text-center"
                   >
                     {isLoading ? (
