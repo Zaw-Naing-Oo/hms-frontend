@@ -82,10 +82,10 @@ const HospitalDoctorsTable = () => {
       accessorKey: "qualifications",
       header: "Qualifications",
     },
-    {
-      accessorKey: "designation",
-      header: "Designation",
-    },
+    // {
+    //   accessorKey: "designation",
+    //   header: "Designation",
+    // },
     {
       accessorKey: "department",
       header: "Department",

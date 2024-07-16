@@ -30,11 +30,13 @@ const DoctorDetails = ({ doctor, isFetching }) => {
     roomNumber,
     branchNames,
     bmdcNo,
-    consulatationFee,
+    consultationFee,
     phone,
     feesToShowReport,
     hospital,
   } = doctor;
+
+  console.log(doctor)
 
   const dataRows = [
     {
@@ -75,7 +77,7 @@ const DoctorDetails = ({ doctor, isFetching }) => {
     },
     {
       title: "Consultation Fee",
-      value: consulatationFee,
+      value: consultationFee,
     },
     {
       title: "Fees to Show Report",
@@ -118,10 +120,10 @@ const DoctorDetails = ({ doctor, isFetching }) => {
             />
             <div className="px-5 pb-5 pt-5 text-center">
               <h2 className="mb-2 text-xl font-medium text-blue">{name}</h2>
-              <p className="mb-1 text-[15px] text-gray-500">
+              {/* <p className="mb-1 text-[15px] text-gray-500">
                 <span className="font-medium text-gray-700">Designation:</span>{" "}
                 {designation}
-              </p>
+              </p> */}
               <p className="text-[15px] text-gray-500">
                 <span className="font-medium text-gray-700">
                   Qualifications:

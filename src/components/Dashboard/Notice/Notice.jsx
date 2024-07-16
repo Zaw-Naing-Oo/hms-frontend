@@ -25,6 +25,8 @@ const Notice = () => {
 
   const notices = noticeQuery.data?.data?.notices || [];
 
+  console.log(notices)
+
   const deleteMutation = useMutation({
     mutationFn: deleteNotice,
     onSuccess: () => {

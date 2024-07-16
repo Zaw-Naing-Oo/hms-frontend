@@ -17,6 +17,7 @@ const DashFormField = ({
   disabled,
   isTextarea,
 }) => {
+  console.log("DashFormField", inputType, isTextarea,);
   return (
     <FormField
       control={formControl}
