@@ -41,7 +41,7 @@ const Login = () => {
           </div>
           <div className="hidden p-2 md:block">
             <img
-              src="/hospitalReception.jpg"
+              src="/hospitalReception1.jpg"
               alt="Signup"
               className="h-full w-full rounded-xl object-cover"
             />

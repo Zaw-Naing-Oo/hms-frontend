@@ -15,8 +15,12 @@ const ContactInfo = () => {
         <h4 className="mb-5 text-xs font-semibold uppercase tracking-widest">
           Follow us
         </h4>
-        <div className="inline-flex items-center gap-2 text-lg">
-          <a
+        <div className="inline-flex items-center gap-4 text-lg">
+          <div><FaFacebookF /></div>
+          <div><FaGithub /></div>
+          <div><FaLinkedinIn /></div>
+          <div><FaInstagram /></div>
+          {/* <a
             href="https://www.facebook.com/patientoo"
             target="_blank"
             className="p-1 duration-300 hover:text-blue"
@@ -43,7 +47,7 @@ const ContactInfo = () => {
             className="p-1 duration-300 hover:text-blue"
           >
             <FaInstagram />
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="mx-auto max-w-xs border-b border-[#ebebeb] py-7">
@@ -57,7 +61,7 @@ const ContactInfo = () => {
           <span className="text-xl text-blue">
             <IoMdCall />
           </span>
-          +8801723-4567890
+          +95965018820
         </a>
       </div>
       <div className="mx-auto max-w-xs border-b border-[#ebebeb] py-7">
@@ -65,14 +69,14 @@ const ContactInfo = () => {
           E-mail
         </h4>
         <a
-          href="zawnaingoo002345@gmail.com"
+          href="trustcare2024@gmail.com"
           target="_blank"
           className="inline-flex items-center gap-3 duration-300 hover:text-blue"
         >
           <span className="text-xl text-blue">
             <MdOutlineMail />
           </span>
-          zawnaingoo002345@gmail.com
+          trustcare2024@gmail.com
         </a>
       </div>
       <div className="mx-auto max-w-xs pt-7">
