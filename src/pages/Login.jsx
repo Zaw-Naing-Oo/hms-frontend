@@ -30,14 +30,14 @@ const Login = () => {
               </Link>
             </p>
             <LoginForm />
-            <div className="mt-3 text-right">
+            {/* <div className="mt-3 text-right">
               <Link
                 to="/forgot-password"
                 className="text-sm text-blue underline hover:no-underline"
               >
                 Forgot Password?
               </Link>
-            </div>
+            </div> */}
           </div>
           <div className="hidden p-2 md:block">
             <img

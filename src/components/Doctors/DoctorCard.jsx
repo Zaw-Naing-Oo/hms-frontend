@@ -25,10 +25,10 @@ const DoctorCard = ({ doctor }) => {
             <span className="text-gray-500">Department: </span>
             {doctor.department}
           </p>
-          <p>
+          {/* <p>
             <span className="text-gray-500">Designation: </span>
             {doctor.designation}
-          </p>
+          </p> */}
           <p>
             <span className="text-gray-500">Off Days: </span>
             {doctor.offDays.join(", ")}
