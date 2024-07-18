@@ -65,7 +65,7 @@ const AddDoctor = ({ doctor = {} }) => {
       roomNumber: doctor?.roomNumber || "",
       branchNames: doctor?.branchNames || [],
       bmdcNo: doctor?.bmdcNo || "",
-      consultationFee: doctor?.consulatationFee || undefined,
+      consultationFee: doctor?.consultationFee || undefined,
       phone: doctor?.phone || "",
       feesToShowReport: doctor?.feesToShowReport || undefined,
     },

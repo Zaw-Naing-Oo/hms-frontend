@@ -26,7 +26,7 @@ const MobileNavItems = ({ user, items, showMenu, setShowMenu, isLoading }) => {
         >
           <SheetHeader>
             <Link className="flex h-[64px] items-center border-b px-6" to="/">
-              <img className="h-8 pt-1.5" src="/logo.png" alt="Patientoo" />
+              <img className="h-8 pt-1.5" src="/logo4.svg" alt="Patientoo" />
             </Link>
           </SheetHeader>
           <div className="px-6 py-5">

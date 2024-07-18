@@ -8,7 +8,7 @@ const DoctorCard = ({ doctor }) => {
         <img
           src={
             doctor.photo ||
-            "https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.jpg?crop=0.66698xw:1xh;center,top&resize=400:*"
+            "https://i.pinimg.com/564x/02/13/eb/0213eb2d43f58fcde829dd5dd2223d63.jpg"
           }
           alt={doctor.name}
           className="h-full w-40 rounded-md object-cover object-center xl:w-32 2xl:w-[165px]"
