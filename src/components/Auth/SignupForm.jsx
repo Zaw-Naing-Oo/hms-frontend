@@ -13,7 +13,7 @@ const formSchema = z.object({
   name: z.string().min(3),
   mobileNo: z
     .string()
-    .min(11, { message: "Mobile no must be 11 characters long" })
+    .min(9, { message: "Mobile no must be 9 characters long" })
     .max(11, { message: "Mobile no must be 11 characters long" }),
   password: z.string().min(8),
   confirmPassword: z.string().min(8),
@@ -40,7 +40,7 @@ const SignupForm = () => {
         toast("Signup successful", {
           type: "success",
           description:
-            "Verification OTP sent to your mobile number. Please check and verify your account",
+            "Please Login",
         });
 
         form.reset();
@@ -49,7 +49,7 @@ const SignupForm = () => {
          return navigate("/login");
 
          /**  old code  */
-        return navigate(`/verify-otp?phone=${data?.user?.mobileNo}`);
+        // return navigate(`/verify-otp?phone=${data?.user?.mobileNo}`);
         
       } else {
         toast("Signup failed", { type: "error", description: data.message });

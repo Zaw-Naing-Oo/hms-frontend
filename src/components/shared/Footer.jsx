@@ -3,6 +3,7 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedinIn,
+  FaViber
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -38,14 +39,14 @@ const Footer = () => {
                     About
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     className="font-medium text-teal-700 hover:underline"
                     to="/privacy-policy"
                   >
                     Privacy Policy
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link
                     className="font-medium text-teal-700 hover:underline"
@@ -57,53 +58,61 @@ const Footer = () => {
                 <li>
                   <Link
                     className="font-medium text-teal-700 hover:underline"
-                    to="/terms-of-use"
-                  >
-                    Terms of Use
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="font-medium text-teal-700 hover:underline"
                     to="/contact"
                   >
                     Contact Us
                   </Link>
                 </li>
+                {/* <li>
+                  <Link
+                    className="font-medium text-teal-700 hover:underline"
+                    to="/terms-of-use"
+                  >
+                    Terms of Use
+                  </Link>
+                </li> */}
+                
               </ul>
             </div>
           </div>
           <div className="text-center md:text-left">
             <h2 className="mb-5 text-xl font-semibold text-gray-700">Social</h2>
             <div className="flex items-center justify-center gap-3">
-              <a
+              {/* <a
                 href="https://www.facebook.com/patientoo"
                 target="_blank"
                 className="flex size-9 items-center justify-center rounded-sm bg-[#0866FF] p-1 text-lg text-white duration-300"
               >
                 <FaFacebookF />
-              </a>
+              </a> */}
               <a
-                href="#"
+                href="https://github.com/Zaw-Naing-Oo"
                 target="_blank"
                 className="flex size-9 items-center justify-center rounded-sm bg-[#1F2328] p-1 text-lg text-white duration-300"
               >
                 <FaGithub />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/zaw-naing-oo-660150206"
                 target="_blank"
                 className="flex size-9 items-center justify-center rounded-sm bg-[#0A66C2] p-1 text-lg text-white duration-300"
               >
                 <FaLinkedinIn />
               </a>
               <a
+                href="https://github.com/Zaw-Naing-Oo"
+                target="_blank"
+                className="flex size-9 items-center justify-center rounded-sm bg-[#86198f] p-1 text-lg text-white duration-300"
+              >
+                <FaViber />
+              </a>
+              {/* <a
                 href="#"
                 target="_blank"
                 className="flex size-9 items-center justify-center rounded-sm bg-[#F7085F] p-1 text-lg text-white duration-300"
               >
                 <FaInstagram />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

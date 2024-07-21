@@ -15,7 +15,7 @@ const formSchema = z.object({
   }),
   mobileNo: z
     .string()
-    .min(11, { message: "Mobile no must be at least 11 characters long" })
+    .min(9, { message: "Mobile no must be at least 9 characters long" })
     .max(11, { message: "Mobile no must be at least 11 characters long" }),
   password: z.string().min(8, {
     message: "Password must contain at least 8 characters",
@@ -55,7 +55,9 @@ const AddHospital = () => {
 
         return navigate("..");
       } else {
-        toast.error(data.message || "Failed to add hospital");
+        toast.error(data.message || "Failed to add hospital", {
+          description: "Please try with another mobile no.",
+        });
       }
     },
     onError: (error) => {

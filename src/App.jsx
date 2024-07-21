@@ -40,6 +40,7 @@ import PVPolicy from "./pages/PVPolicy";
 import Signup from "./pages/Signup";
 import TermsOfUse from "./pages/TermsOfUse";
 import VerifyAccount from "./pages/VerifyAccount";
+import Patients from "./components/Dashboard/Patients/Patients";
 
 const App = () => {
   return (
@@ -142,6 +143,7 @@ const App = () => {
               ></Route>
             </Route>
             <Route path="profile" element={<AdminProfile />} />
+            <Route path="patients" element={ <Patients /> } />
           </Route>
 
           {/* HOSPITAL DASHBOARD ROUTES */}

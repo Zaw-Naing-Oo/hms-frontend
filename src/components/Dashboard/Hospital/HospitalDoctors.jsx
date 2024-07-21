@@ -9,7 +9,7 @@ const HospitalDoctors = () => {
   const navigate = useNavigate();
   const user = useStore((state) => state.user);
 
-  console.log(user);
+  // console.log(user);
 
   const handleAddDoctor = () => {
     if (user.profile?.district) {

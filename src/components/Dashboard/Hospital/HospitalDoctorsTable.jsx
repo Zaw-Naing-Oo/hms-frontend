@@ -7,8 +7,14 @@ import { TbEdit } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { toast } from "sonner";
 import DashDataTable from "../shared/DashDataTable";
+import useAuth from "@/hooks/useAuth";
 
 const HospitalDoctorsTable = () => {
+
+  const { user } = useAuth();
+  const hospitalId = user?.profile?._id;
+
+
   const doctorsQuery = useQuery({
     queryKey: ["doctors"],
     queryFn: () => getAllDoctors(),
@@ -22,7 +28,8 @@ const HospitalDoctorsTable = () => {
       doctorsQuery.refetch();
     },
     onError: (error) => {
-      toast("Failed to delete doctor", { type: "error" });
+      console.log(error);
+      toast("Failed to delete doctor", { type: "fail" });
       console.error(error);
     },
   });
@@ -121,6 +128,7 @@ const HospitalDoctorsTable = () => {
       accessorFn: (row) => row._id,
       header: "Edit",
       cell: (props) => (
+        props?.row?.original?.hospital?._id === hospitalId && (
         <div className="flex max-w-[200px] items-center gap-x-2">
           <Button className="text-blue" variant="outline" size="icon" asChild>
             <Link to={`edit/${props.getValue()}`}>
@@ -128,26 +136,29 @@ const HospitalDoctorsTable = () => {
             </Link>
           </Button>
         </div>
+        )
       ),
       enableHiding: false,
     },
-    {
-      accessorFn: (row) => row._id,
-      header: "Delete",
-      cell: (props) => (
-        <div className="flex max-w-[200px] items-center gap-x-2">
-          <Button
-            className="text-[#FF5556]"
-            onClick={() => handleDeleteDoctor(props.getValue())}
-            variant="outline"
-            size="icon"
-          >
-            <MdDeleteOutline className="text-lg" />
-          </Button>
-        </div>
-      ),
-      enableHiding: false,
-    },
+    // {
+    //   accessorFn: (row) => row._id,
+    //   header: "Delete",
+    //   cell: (props) => (
+    //     props?.row?.original?.hospital?._id === hospitalId && (
+    //     <div className="flex max-w-[200px] items-center gap-x-2">
+    //       <Button
+    //         className="text-[#FF5556]"
+    //         onClick={() => handleDeleteDoctor(props.getValue())}
+    //         variant="outline"
+    //         size="icon"
+    //       >
+    //         <MdDeleteOutline className="text-lg" />
+    //       </Button>
+    //     </div>
+    //     )
+    //   ),
+    //   enableHiding: false,
+    // },
   ];
 
   return (
