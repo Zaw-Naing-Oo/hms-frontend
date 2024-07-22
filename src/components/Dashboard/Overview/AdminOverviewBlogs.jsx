@@ -10,7 +10,9 @@ import DashDataTable from "../shared/DashDataTable";
 const AdminOverviewBlogs = () => {
   const blogsQuery = useQuery({
     queryKey: ["blogs", { postedBy: "admin", limit: 6, sort: "-createdAt" }],
-    queryFn: () => getAllBlogs("?postedBy=admin&limit=6&sort=-createdAt"),
+    // queryFn: () => getAllBlogs("?postedBy=admin&limit=6&sort=-createdAt"),
+    queryFn: () => getAllBlogs("?limit=6&sort=-createdAt"),
+
   });
 
   const blogs = blogsQuery.data?.data?.blogs || [];

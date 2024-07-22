@@ -30,11 +30,11 @@ const menuItems = {
       path: "notice",
       icon: <HiOutlineBellAlert />,
     },
-    {
-      title: "Admins",
-      path: "admins",
-      icon: <RiAdminLine />,
-    },
+    // {
+    //   title: "Admins",
+    //   path: "admins",
+    //   icon: <RiAdminLine />,
+    // },
     {
       title: "Doctors",
       path: "doctors",

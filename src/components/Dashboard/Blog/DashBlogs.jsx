@@ -8,14 +8,24 @@ import DashBlogsTable from "./DashBlogsTable";
 
 const DashBlogs = () => {
   const user = useStore((state) => state.user);
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
+
+  // Determine query base on user role
+  const queryKey = user?.role === "admin" ? ["blogs"] : ["blogs", { author: user?._id }];
+  const queryFn = user?.role === "admin" ? () => getAllBlogs() : () => getAllBlogs(`?author=${user?._id}`);
+
+  // const blogsQuery = useQuery({
+  //   queryKey: ["blogs", { postedBy: user?.role }],
+  //   queryFn: () =>
+  //     getAllBlogs(
+  //       `?postedBy=${user?.role}${user.role === "admin" ? "" : `&author=${user._id}`}`,
+  //     ),
+  //   enabled: !!user?._id,
+  // });
 
   const blogsQuery = useQuery({
-    queryKey: ["blogs", { postedBy: user?.role }],
-    queryFn: () =>
-      getAllBlogs(
-        `?postedBy=${user?.role}${user.role === "admin" ? "" : `&author=${user._id}`}`,
-      ),
+    queryKey,
+    queryFn,
     enabled: !!user?._id,
   });
 
