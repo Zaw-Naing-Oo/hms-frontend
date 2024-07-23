@@ -17,6 +17,8 @@ const AdminOverview = () => {
 
   const overview = overviewQuery?.data?.data || {};
 
+  console.log(overview)
+
   return (
     <>
       <DashboardHeader title="Overview" desc="Get a comprehensive snapshot" />

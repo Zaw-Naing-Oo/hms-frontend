@@ -133,7 +133,7 @@ const HospitalAppointmentDownload = ({ appointments, queryString }) => {
           data.settings.margin.top = 10;
         }
 
-        const footerText = "Developed by Posh Coder";
+        const footerText = "Developed by TRUSTCare";
         const pageSize = doc.internal.pageSize;
         const pageHeight = pageSize.height
           ? pageSize.height
