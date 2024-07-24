@@ -126,7 +126,7 @@ const Footer = () => {
               to="https://www.zawnaingoo.me/"
               target="_blank"
             >
-              Zaw Naing Oo
+              TRUSTCare Team
             </Link>
           </p>
         </div>
