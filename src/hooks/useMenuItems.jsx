@@ -34,12 +34,12 @@ const menuItems = {
     //   title: "Admins",
     //   path: "admins",
     //   icon: <RiAdminLine />,
+    // },cd
+    // {
+    //   title: "Doctors",
+    //   path: "doctors",
+    //   icon: <FaUserDoctor />,
     // },
-    {
-      title: "Doctors",
-      path: "doctors",
-      icon: <FaUserDoctor />,
-    },
     {
       title: "Patients",
       path: "patients",
