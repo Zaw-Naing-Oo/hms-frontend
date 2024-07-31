@@ -3,7 +3,8 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedinIn,
-  FaViber
+  FaViber,
+  FaYoutube
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -19,10 +20,11 @@ const Footer = () => {
               alt="Patientoo"
             />
             <p className="mt-5 text-[15px] font-medium text-gray-600">
-             Trust Care represents a sophisticated hospital management system meticulously crafted to optimize healthcare operations and elevate patient care standards
+            
+TRUSTCare is a hospital management system designed to optimize operations and improve patient care
             </p>
             <p className="mt-4 text-[13px] font-medium text-gray-600">
-              &copy; {new Date().getFullYear()} TrustCare. All Rights Reserved
+              &copy; {new Date().getFullYear()} TRUSTCare. All Rights Reserved
             </p>
           </div>
           <div className="flex justify-center">
@@ -85,7 +87,7 @@ const Footer = () => {
               >
                 <FaFacebookF />
               </a> */}
-              <a
+              {/* <a
                 href="https://github.com/Zaw-Naing-Oo"
                 target="_blank"
                 className="flex size-9 items-center justify-center rounded-sm bg-[#1F2328] p-1 text-lg text-white duration-300"
@@ -98,13 +100,20 @@ const Footer = () => {
                 className="flex size-9 items-center justify-center rounded-sm bg-[#0A66C2] p-1 text-lg text-white duration-300"
               >
                 <FaLinkedinIn />
-              </a>
+              </a> */}
               <a
                 href="https://github.com/Zaw-Naing-Oo"
                 target="_blank"
                 className="flex size-9 items-center justify-center rounded-sm bg-[#86198f] p-1 text-lg text-white duration-300"
               >
                 <FaViber />
+              </a>
+              <a
+                href="https://github.com/Zaw-Naing-Oo"
+                target="_blank"
+                className="flex size-9 items-center justify-center rounded-sm bg-[#dc2626] p-1 text-lg text-white duration-300"
+              >
+                <FaYoutube />
               </a>
               {/* <a
                 href="#"

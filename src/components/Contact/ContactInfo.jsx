@@ -12,14 +12,14 @@ const ContactInfo = () => {
   return (
     <div className="w-full border-t border-[#ebebeb] pt-10 text-center text-[15px] text-[#151515] md:w-[280px] md:border-l md:border-t-0 md:pl-8 md:pr-3 md:text-left lg:w-[320px] lg:pl-10 lg:pr-8 lg:pt-0">
       <div className="mx-auto max-w-xs border-b border-[#ebebeb] pb-7">
-        <h4 className="mb-5 text-xs font-semibold uppercase tracking-widest">
+        {/* <h4 className="mb-5 text-xs font-semibold uppercase tracking-widest">
           Follow us
-        </h4>
-        <div className="inline-flex items-center gap-4 text-lg">
+        </h4> */}
+        {/* <div className="inline-flex items-center gap-4 text-lg">
           <div><FaFacebookF /></div>
           <div><FaGithub /></div>
           <div><FaLinkedinIn /></div>
-          <div><FaInstagram /></div>
+          <div><FaInstagram /></div> */}
           {/* <a
             href="https://www.facebook.com/patientoo"
             target="_blank"
@@ -48,7 +48,7 @@ const ContactInfo = () => {
           >
             <FaInstagram />
           </a> */}
-        </div>
+        {/* </div> */}
       </div>
       <div className="mx-auto max-w-xs border-b border-[#ebebeb] py-7">
         <h4 className="mb-5 text-xs font-semibold uppercase tracking-widest">

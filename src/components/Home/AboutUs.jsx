@@ -24,7 +24,7 @@ const AboutUs = ({ isHome = false }) => {
               Partnering with You for Optimal Health
             </h2>
             <p className="max-w-xl text-sm text-gray-500 sm:text-base">
-            We assert that exemplary care forms the cornerstone of a healthier life. Our devoted team delivers comprehensive and empathetic care, meticulously tailored to your unique needs. By harnessing the latest advancements in medical science, we empower you to take proactive control of your health.
+            We believe quality care is key to a healthier life. Our team offers personalized, compassionate care using the latest medical advancements to help you manage your health.
             </p>
 
             <Button

@@ -11,9 +11,11 @@ const Hero = () => {
               Find & Book <span className="text-teal-700">Appointment</span> with
               your favourite <span className="text-teal-700">Doctors</span>
             </h1>
-            <p className="max-w-2xl text-[15px] text-gray-600 sm:text-base">
-            Locate esteemed medical professionals in your vicinity through our sophisticated search and booking platform. Whether you necessitate a routine check-up or a specialist consultation, you can effortlessly arrange appointments online and remain well-informed about your health
+            <div>
+            <p className="max-w-2xl text-[15px] text-gray-600 sm:text-base lg:text-justify">
+            Discover top doctors near you with our easy-to-use search and booking platform. Whether you need a general check-up or specialist consultation, book appointments online and stay informed about your health
             </p>
+            </div>
             <Button
               className="mt-6 rounded-full border-2 border-teal-700 bg-teal-700 px-5 py-6 text-[15px] transition-colors duration-300 hover:bg-transparent hover:text-teal-700 lg:mt-7"
               asChild
