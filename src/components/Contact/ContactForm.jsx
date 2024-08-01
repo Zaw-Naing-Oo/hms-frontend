@@ -108,7 +108,7 @@ const ContactForm = () => {
               <span className="text-xl">
                 <MdAlternateEmail />
               </span>
-              Contact us
+              Send
             </Button>
           </div>
         </form>
