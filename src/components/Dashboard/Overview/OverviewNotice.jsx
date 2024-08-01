@@ -13,6 +13,8 @@ const OverviewNotice = ({ role = null, isDashboard = true }) => {
 
   const notices = noticeQuery.data?.data?.notices || [];
 
+  console.log(notices)
+
   return (
     <div
       className={cn(
