@@ -12,72 +12,32 @@ const ContactInfo = () => {
   return (
     <div className="w-full border-t border-[#ebebeb] pt-10 text-center text-[15px] text-[#151515] md:w-[280px] md:border-l md:border-t-0 md:pl-8 md:pr-3 md:text-left lg:w-[320px] lg:pl-10 lg:pr-8 lg:pt-0">
       <div className="mx-auto max-w-xs border-b border-[#ebebeb] pb-7">
-        {/* <h4 className="mb-5 text-xs font-semibold uppercase tracking-widest">
-          Follow us
-        </h4> */}
-        {/* <div className="inline-flex items-center gap-4 text-lg">
-          <div><FaFacebookF /></div>
-          <div><FaGithub /></div>
-          <div><FaLinkedinIn /></div>
-          <div><FaInstagram /></div> */}
-          {/* <a
-            href="https://www.facebook.com/patientoo"
-            target="_blank"
-            className="p-1 duration-300 hover:text-blue"
-          >
-            <FaFacebookF />
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            className="p-1 duration-300 hover:text-blue"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            className="p-1 duration-300 hover:text-blue"
-          >
-            <FaLinkedinIn />
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            className="p-1 duration-300 hover:text-blue"
-          >
-            <FaInstagram />
-          </a> */}
-        {/* </div> */}
       </div>
       <div className="mx-auto max-w-xs border-b border-[#ebebeb] py-7">
         <h4 className="mb-5 text-xs font-semibold uppercase tracking-widest">
           Phone
         </h4>
-        <a
-          href="viber://chat?number=+959785077529"
-          className="inline-flex items-center gap-3 duration-300 hover:text-blue"
+        <p
+          className="inline-flex items-center gap-3 duration-300"
         >
           <span className="text-xl text-blue">
             <IoMdCall />
           </span>
           +95965018820
-        </a>
+        </p>
       </div>
       <div className="mx-auto max-w-xs border-b border-[#ebebeb] py-7">
         <h4 className="mb-5 text-xs font-semibold uppercase tracking-widest">
           E-mail
         </h4>
-        <a
-          href="trustcare2024@gmail.com"
-          target="_blank"
-          className="inline-flex items-center gap-3 duration-300 hover:text-blue"
+        <p
+          className="inline-flex items-center gap-3 duration-300"
         >
           <span className="text-xl text-blue">
             <MdOutlineMail />
           </span>
           trustcare2024@gmail.com
-        </a>
+        </p>
       </div>
       <div className="mx-auto max-w-xs pt-7">
         <h4 className="mb-5 text-xs font-semibold uppercase tracking-widest">
@@ -87,7 +47,7 @@ const ContactInfo = () => {
           <span className="text-xl text-blue">
             <IoLocationSharp />
           </span>
-          God Thaton, Mon State, Myanmar
+          Gawt Thaton, Mon State, Myanmar
         </p>
       </div>
     </div>

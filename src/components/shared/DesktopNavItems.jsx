@@ -25,7 +25,7 @@ const DesktopNavItems = ({ items, user, isLoading }) => {
               activeclassname="active"
               className="[&.active]:text-blue"
             >
-              {user ? "Dashboard" : "Login"}
+              {user ? "Overview" : "Login"}
             </NavLink>
           ) : (
             <Skeleton className="h-6 w-20" />
@@ -40,7 +40,7 @@ const DesktopNavItems = ({ items, user, isLoading }) => {
             to="/doctors"
             variant="outline"
           >
-            Find Doctor
+             Doctors & Get Appointment
           </NavLink>
         </li>
       </ul>
