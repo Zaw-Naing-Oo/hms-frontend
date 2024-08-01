@@ -7,10 +7,9 @@ const DoctorCard = ({ doctor }) => {
       <div className="">
         <img
           src={
-            doctor.photo ||
-            "https://i.pinimg.com/564x/02/13/eb/0213eb2d43f58fcde829dd5dd2223d63.jpg"
+            "\docavater.jpg"
           }
-          alt={doctor.name}
+          alt="doctoravater"
           className="h-full w-40 rounded-md object-cover object-center xl:w-32 2xl:w-[165px]"
         />
       </div>

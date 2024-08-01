@@ -110,14 +110,7 @@ const DoctorDetails = ({ doctor, isFetching }) => {
       <div className="grid grid-cols-1 items-start gap-x-10 gap-y-8 xl:grid-cols-[290px_1fr] 2xl:grid-cols-[320px_1fr]">
         {!isFetching ? (
           <div className="mx-auto max-w-[400px] shadow-sm">
-            <img
-              src={
-                photo ||
-                "https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.jpg?crop=0.66698xw:1xh;center,top&resize=400:*"
-              }
-              alt={name}
-              className="mx-auto aspect-[3/4] object-cover"
-            />
+            <img src="/docavater.jpg" alt="doctor avatar" className="mx-auto aspect-[3/4] object-cover" />
             <div className="px-5 pb-5 pt-5 text-center">
               <h2 className="mb-2 text-xl font-medium text-blue">{name}</h2>
               {/* <p className="mb-1 text-[15px] text-gray-500">

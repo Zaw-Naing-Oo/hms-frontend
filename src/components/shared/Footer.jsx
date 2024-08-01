@@ -102,14 +102,14 @@ TRUSTCare is a hospital management system designed to optimize operations and im
                 <FaLinkedinIn />
               </a> */}
               <a
-                href="https://github.com/Zaw-Naing-Oo"
+                href="https://invite.viber.com/?g2=AQB7WrKIVh9bKVNDAgSBBRCF6gK3iBcLE4PRbqQ4KD7ZGfUMqCG098ynqM%2B15nTr"
                 target="_blank"
                 className="flex size-9 items-center justify-center rounded-sm bg-[#86198f] p-1 text-lg text-white duration-300"
               >
                 <FaViber />
               </a>
               <a
-                href="https://github.com/Zaw-Naing-Oo"
+                href="https://www.youtube.com/channel/UC8HSSfN-sFmu-EP5w05oTLA"
                 target="_blank"
                 className="flex size-9 items-center justify-center rounded-sm bg-[#dc2626] p-1 text-lg text-white duration-300"
               >
