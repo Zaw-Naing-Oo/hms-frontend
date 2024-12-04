@@ -85,13 +85,11 @@ TRUSTCare is a hospital management system designed to optimize operations and im
         <div className="container">
           <p className="py-5 text-center text-sm text-gray-500">
             Developed by{" "}
-            <Link
-              className="font-medium text-teal-700 hover:underline"
-              to="https://www.zawnaingoo.me/"
-              target="_blank"
+            <span
+              className="font-medium text-teal-700"
             >
               TRUSTCare Team
-            </Link>
+            </span>
           </p>
         </div>
       </div>
