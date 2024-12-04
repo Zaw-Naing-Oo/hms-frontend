@@ -26,6 +26,8 @@ const Blog = () => {
   });
 
   const blogs = blogsQuery.data?.blogs || [];
+
+  console.log(blogs)
   const totalPages = blogsQuery.data?.totalPages || 1;
 
   return (

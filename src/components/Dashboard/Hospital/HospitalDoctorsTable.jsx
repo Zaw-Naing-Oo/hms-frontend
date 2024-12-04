@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { deleteDoctor, getAllDoctors } from "@/db/doctor";
+import { deleteDoctor, getAllDoctors, getHospitalDoctors } from "@/db/doctor";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { LuEye } from "react-icons/lu";
 import { MdDeleteOutline } from "react-icons/md";
@@ -8,18 +8,30 @@ import { Link } from "react-router-dom";
 import { toast } from "sonner";
 import DashDataTable from "../shared/DashDataTable";
 import useAuth from "@/hooks/useAuth";
+import { useState } from "react";
 
 const HospitalDoctorsTable = () => {
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const rowsPerPage = 10; // Default number of rows per page
 
   const { user } = useAuth();
   const hospitalId = user?.profile?._id;
 
+ 
+
 
   const doctorsQuery = useQuery({
     queryKey: ["doctors"],
-    queryFn: () => getAllDoctors(),
+    // queryFn: () => getAllDoctors(),
+    queryFn: () => getHospitalDoctors(),
+
+    keepPreviousData: true, // Helps maintain UI stability during refetching
   });
   const doctors = doctorsQuery.data?.data?.doctors || [];
+
+  console.log(doctorsQuery.data?.data)
+  console.log(doctors)
 
   const deleteMutation = useMutation({
     mutationFn: (doctorId) => deleteDoctor(doctorId),
@@ -127,8 +139,9 @@ const HospitalDoctorsTable = () => {
     {
       accessorFn: (row) => row._id,
       header: "Edit",
-      cell: (props) => (
-        props?.row?.original?.hospital?._id === hospitalId && (
+      cell: (props) => ( 
+        // console.log(props?.row?.original?.hospital === hospitalId),
+        props?.row?.original?.hospital === hospitalId && (
         <div className="flex max-w-[200px] items-center gap-x-2">
           <Button className="text-blue" variant="outline" size="icon" asChild>
             <Link to={`edit/${props.getValue()}`}>

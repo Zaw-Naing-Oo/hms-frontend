@@ -64,7 +64,7 @@ const ContactForm = () => {
               className="rounded-none border-[#d8d8d8] bg-transparent px-6 py-8 text-[15px] transition-colors duration-200 focus:border-blue "
               name="name"
               type="text"
-              placeholder="Your Name*"
+              placeholder="Example: Mg Mg*"
               required
               value={form.watch("name")}
               onChange={(e) => form.setValue("name", e.target.value)}
@@ -74,7 +74,7 @@ const ContactForm = () => {
               className="rounded-none border-[#d8d8d8] bg-transparent px-6 py-8 text-[15px] transition-colors duration-200 focus:border-blue "
               name="email"
               type="email"
-              placeholder="Your Email"
+              placeholder="Example: mgmg@gmail.com"
               value={form.watch("email")}
               onChange={(e) => form.setValue("email", e.target.value)}
               disabled={isLoading}
