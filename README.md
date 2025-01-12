@@ -6,12 +6,10 @@ The Hospital Management System provides a unified platform for hospitals to mana
 
 - **Landing Page:** Featuring a hero section, about us, how it works, blogs, and contact section.
 - **Appointment Management:** Features to book appointments, view all appointments, filter appointments by doctor or date, and download appointment lists.
-- **User Authentication:** Mobile number verification via SMS OTP for user registration and login. Ability to reset or change password.
 - **User Dashboards:** Separate dashboards for hospitals, patients, and admins to manage their respective data and activities.
 - **Doctor Profiles:** Detailed profiles for doctors. Profiles can be shared on social media.
 - **Blog Management:** Blogs can be posted by both admins and hospitals, with features to like, dislike, comment, and share.
 - **Notice Management:** Admins can post notices directed to specific hospitals, patients, or all users, visible on their respective dashboards.
-- **SMS Notifications:** Automatic SMS notifications for user verification and appointment confirmations.
 - **Filters and Search:** Advanced filtering options based on location, hospital name, specialities, and date to find doctors and appointments.
 - **PDF Export:** Downloadable PDFs for patient and appointment details.
 
@@ -24,7 +22,7 @@ The Hospital Management System provides a unified platform for hospitals to mana
 1. Clone the repository:
 
 ```
-git clone https://github.com/Iamparves/pc-hms-frontend
+git clone https://github.com/Zaw-Naing-Oo/hms-frontend.git
 cd pc-hms-frontend
 ```
 
@@ -41,8 +39,6 @@ pnpm install
 
 ```
 VITE_BASE_URL=backend_url/api/v1
-VITE_SMS_API_KEY=your_sms_api_key
-VITE_SMS_SENDER_ID=your_sms_sender_id
 VITE_IMGBB_API_KEY=imgbb_api_key
 ```
 
