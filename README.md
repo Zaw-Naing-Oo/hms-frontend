@@ -1,8 +1,8 @@
-## Hospital Management System
+## Hospital Engagement System
 
 ### Overview
 
-The Hospital Management System provides a unified platform for hospitals to manage their operations efficiently. It includes features such as:
+The Hospital Engagement System provides a unified platform for hospitals to manage their operations efficiently. It includes features such as:
 
 - **Landing Page:** Featuring a hero section, about us, how it works, blogs, and contact section.
 - **Appointment Management:** Features to book appointments, view all appointments, filter appointments by doctor or date, and download appointment lists.
